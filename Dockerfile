@@ -6,12 +6,12 @@ WORKDIR /code
 
 # TODO
 # copy and install requirements (simple and cache-friendly)
-COPY requirements.txt .
+COPY requirements.txt /code/requirements.txt
 RUN pip install --upgrade pip \
-    && pip install -r requirements.txt
+    && pip install -r /code/requirements.txt
 
 # copy application code
-COPY ./app ./app
+COPY ./app /code/app
 
 EXPOSE 8080
 
