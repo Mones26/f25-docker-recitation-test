@@ -10,7 +10,8 @@ def read_root():
 
 
 RECITATION_HOURS = {"a": "09:00~09:50", "b": "10:00~10:50",
-                    "c": "11:00~11:50", "d": "12:00~12:50"}
+                    "c": "11:00~11:50", "d": "1:00~1:50",
+                    "e": "2:00~2:50", "f": "3:00~3:50"}
 MICROSERVICE_LINK = "https://whos-my-ta.fly.dev/section_id/"
 
 
@@ -22,7 +23,7 @@ def get_section_info(section_id: str):
 
     section_id = section_id.lower()
 
-    response = requests.get("https://whos-my-ta.fly.dev/section_id/" + section_id)
+    response = requests.get(MICROSERVICE_LINK + section_id)
 
     # You can check out what the response body looks like in terminal using the print statement
     data = response.json()
