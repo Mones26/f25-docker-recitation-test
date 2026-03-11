@@ -12,7 +12,7 @@ def read_root():
 RECITATION_HOURS = {"a": "09:00~09:50", "b": "10:00~10:50",
                     "c": "11:00~11:50", "d": "1:00~1:50",
                     "e": "2:00~2:50", "f": "3:00~3:50"}
-MICROSERVICE_LINK = "http://17313-teachers2.s3d.cmu.edu:8080/section_info/"
+MICROSERVICE_LINK = "http://17313-teachers.s3d.cmu.edu:8080/section_info/"
 
 
 @app.get("/section_info/{section_id}")
