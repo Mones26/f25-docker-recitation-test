@@ -10,11 +10,11 @@ def read_root():
 
 
 RECITATION_HOURS = {"a": "09:00~09:50", "b": "10:00~10:50",
-                    "c": "11:00~11:50", "d": "1:00~1:50",
-                    "e": "2:00~2:50", "f": "3:00~3:50"}
-RECITATION_TAs = {"a": ["Juan", "---"], "b": ["Kareem", "Jonathan"],
-                    "c": ["Juan", "Rathi"], "d": ["Sarah", "Savannah"],
-                    "e": ["Sarah", "Rathi"], "f": ["Bing", "Jonathan"]}
+                    "c": "11:00~11:50", "d": "12:00~12:50",
+                    "e": "1:00~1:50", "f": "2:00~2:50"}
+RECITATION_TAs = {"a": ["Bing", "Alejandro"], "b": ["Autumn",	"Alejandro"],
+                    "c": ["Lisa", "Hwei-Shin"], "d": ["Lisa", "Hwei-Shin"],
+                    "e": ["Juan", "Kaia"], "f": ["Kaia", "---"]}
 
 MICROSERVICE_LINK = "https://whos-my-ta.fly.dev/section_id/"
 
